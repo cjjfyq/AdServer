@@ -1,4 +1,4 @@
-package com.adserver.controller.com.adserver.service;
+package com.adserver.service;
 
 /**
  * Created by Administrator on 2014/4/14.
