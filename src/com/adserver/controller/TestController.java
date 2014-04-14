@@ -1,6 +1,6 @@
 package com.adserver.controller;
 
-import com.adserver.controller.com.adserver.service.ITestSpring;
+import com.adserver.service.ITestSpring;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 

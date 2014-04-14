@@ -17,6 +17,6 @@
 		<property name="target" ref="userManagerBese"></property>
 	</bean>-->
 
-    <bean id="testSpring" class="com.adserver.controller.com.adserver.service.TestSpring"></bean>
+    <bean id="testSpring" class="com.adserver.service.TestSpring"></bean>
 
 </beans>
