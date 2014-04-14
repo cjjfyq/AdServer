@@ -1,0 +1,7 @@
+#
+#/.gitignore
+.idea
+web/WEB-INF/lib
+web/WEB-INF/classes
+out
+/AdServer.iml
