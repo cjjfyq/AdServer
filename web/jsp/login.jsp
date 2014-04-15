@@ -23,10 +23,20 @@
 <script type="text/javascript">
     function login() {
 //        alert("login");
-        var nameInput = document.getElementById("#name");
-        var name = nameInput.value;
-        var pw = document.getElementById("#password").value;
-        alert("name:" + name + "pw:" + pw);
+//        var nameInput = document.getElementById("#name");
+//        var name = nameInput.value;
+//        var pw = document.getElementById("#password").value;
+//        alert("name:" + name + "pw:" + pw);
+        var nameObj = document.getElementById("name");
+        alert(nameObj);
+        alert(nameObj.value);
+
+        var form = document.forms[0];
+        form.action = "/adserver/doLogin";
+        form.method = "post";
+        form.submit();
+        alert("提交登录");
+        console.log("login");
     }
 </script>
 
@@ -35,9 +45,9 @@
 <h1 style="color: green">登录页面</h1>
 
 <form id="form1" action="/adserver/doLogin" >
-用户名：<input type="text" id="name" ><br>
-密码：<input type="password" id="password"><br>
-<input type="submit" value="登录" id="login">
+用户名：<input type="text" id="name" name="name" ><br>
+密码：<input type="password" id="password" name="password"><br>
+<input type="button" value="登录" onclick="login()">
 </form>
 
 </body>

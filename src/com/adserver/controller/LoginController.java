@@ -1,8 +1,12 @@
 package com.adserver.controller;
 
+import com.adserver.dao.IManagerDao;
+import com.adserver.service.IManagerServie;
+import com.adserver.web.entity.Manager;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -12,6 +16,9 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 public class LoginController {
 
+    @Resource(name = "managerServie")
+    private IManagerServie managerServie;
+
     @RequestMapping("/login")
     public String showLoginPage(HttpServletRequest request, HttpServletResponse response) {
         System.out.println("进入 show login page---");
@@ -19,8 +26,9 @@ public class LoginController {
     }
 
     @RequestMapping("/doLogin")
-    public String doLogin(HttpServletRequest request, HttpServletResponse response) {
+    public String doLogin(Manager manager) {
         System.out.println("进入 do login -----");
+        System.out.println("manager:" + manager);
         return "success";
     }
 
