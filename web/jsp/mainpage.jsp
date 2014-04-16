@@ -14,7 +14,7 @@
         function addUser() {
             var form = document.forms[0];
             form.method = "post";
-            form.action = "/test/user/addUser"
+            form.action = "/adserver/user/addUser"
             form.submit();
         }
     </script>

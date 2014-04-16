@@ -7,7 +7,7 @@
         <!--<mapping class="com.web.controller.entity.User"/>-->
 
         <!--后台管理员-->
-        <mapping class="com.adserver.web.entity.Manager"></mapping>
+        <mapping class="com.adserver.web.entity.User"></mapping>
 
     </session-factory>
 </hibernate-configuration>

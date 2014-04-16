@@ -28,14 +28,14 @@
 //        var pw = document.getElementById("#password").value;
 //        alert("name:" + name + "pw:" + pw);
         var nameObj = document.getElementById("name");
-        alert(nameObj);
-        alert(nameObj.value);
+//        alert(nameObj);
+//        alert(nameObj.value);
 
         var form = document.forms[0];
-        form.action = "/test/doLogin";
+        form.action = "/adserver/doLogin";
         form.method = "post";
         form.submit();
-        alert("提交登录");
+//        alert("提交登录");
         console.log("login");
     }
 </script>

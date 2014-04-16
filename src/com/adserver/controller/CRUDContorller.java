@@ -1,6 +1,6 @@
 package com.adserver.controller;
 
-import com.adserver.web.entity.Manager;
+import com.adserver.web.entity.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -12,8 +12,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/user")
 public class CRUDContorller {
 
+
+
     @RequestMapping("/addUser")
-    public String addUser(Manager manager) {
+    public String addUser(User manager) {
         System.out.println("进入 addUser-----");
         System.out.println("manager: " + manager);
 

@@ -1,6 +1,6 @@
 package com.adserver.dao;
 
-import com.adserver.web.entity.Manager;
+import com.adserver.web.entity.User;
 import org.hibernate.SessionFactory;
 
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by Gordon on 2014/4/15.
  */
-public class ManagerDao implements IManagerDao {
+public class UserDao implements IUserDao {
 
     private SessionFactory sessionFactory;
 
@@ -22,22 +22,22 @@ public class ManagerDao implements IManagerDao {
     }
 
     @Override
-    public void addManager(Manager manager) {
+    public void addUser(User manager) {
         
     }
 
     @Override
-    public List<Manager> getAllManager() {
+    public List<User> getAllUser() {
         return null;
     }
 
     @Override
-    public void updateManager(Manager manager) {
+    public void updateUser(User manager) {
 
     }
 
     @Override
-    public Manager getManager(String name) {
+    public User getUser(String name) {
         return null;
     }
 }

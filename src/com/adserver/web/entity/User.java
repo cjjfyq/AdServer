@@ -10,8 +10,8 @@ import javax.persistence.*;
  * 后台管理员
  */
 @Entity
-@Table(name = "t_manager")
-public class Manager {
+@Table(name = "t_user")
+public class User {
 
     @Id
     @GenericGenerator(name = "system-uuid", strategy = "uuid")

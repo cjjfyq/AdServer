@@ -19,16 +19,16 @@
 
     <bean id="testSpring" class="com.adserver.service.TestSpring"></bean>
 
-    <bean id="managerDao" class="com.adserver.dao.ManagerDao">
+    <bean id="userDao" class="com.adserver.dao.UserDao">
         <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
 
-    <bean id="managerServiceBase" class="com.adserver.service.ManagerService">
-        <property name="managerDao" ref="managerDao"></property>
+    <bean id="userServiceBase" class="com.adserver.service.UserService">
+        <property name="userDao" ref="userDao"></property>
     </bean>
 
-    <bean id="managerService" parent="transactionBase">
-        <property name="target" ref="managerServiceBase"></property>
+    <bean id="userService" parent="transactionBase">
+        <property name="target" ref="userServiceBase"></property>
     </bean>
 
 </beans>
