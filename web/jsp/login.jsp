@@ -32,7 +32,7 @@
         alert(nameObj.value);
 
         var form = document.forms[0];
-        form.action = "/adserver/doLogin";
+        form.action = "/test/doLogin";
         form.method = "post";
         form.submit();
         alert("提交登录");
@@ -44,7 +44,7 @@
 <body>
 <h1 style="color: green"></h1>
 
-<form id="form1" action="/adserver/doLogin" >
+<form id="form1"  >
 用户名：<input type="text" id="name" name="name" ><br>
 密码：<input type="password" id="password" name="password"><br>
 <input type="button" value="登录" onclick="login()">

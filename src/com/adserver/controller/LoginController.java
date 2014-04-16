@@ -28,7 +28,9 @@ public class LoginController {
     public String doLogin(Manager manager) {
         System.out.println("进入 do login -----");
         System.out.println("manager:" + manager);
-        return "success";
+        return "mainpage";
     }
+
+
 
 }
