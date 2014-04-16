@@ -19,21 +19,23 @@ public class ManagerService implements IManagerService {
 
     @Override
     public void addManager(Manager manager) {
-
+        managerDao.addManager(manager);
     }
 
     @Override
     public List<Manager> getAllManager() {
-        return null;
+        List<Manager> allManager = managerDao.getAllManager();
+        System.out.println("all manager:" + allManager);
+        return allManager;
     }
 
     @Override
     public void updateManager(Manager manager) {
-
+        managerDao.updateManager(manager);
     }
 
     @Override
     public Manager getManager(String name) {
-        return null;
+        return managerDao.getManager(name);
     }
 }
