@@ -1,6 +1,7 @@
 package com.adserver.dao;
 
 import com.adserver.web.entity.User;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
 import java.util.List;
@@ -22,8 +23,12 @@ public class UserDao implements IUserDao {
     }
 
     @Override
-    public void addUser(User manager) {
-        
+    public void addUser(User user) {
+//        Session session = sessionFactory.openSession();
+//        session.save(user);
+//        session.close();
+        System.out.println("add user ----");
+        sessionFactory.getCurrentSession().save(user);
     }
 
     @Override

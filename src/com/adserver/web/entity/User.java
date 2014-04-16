@@ -9,30 +9,30 @@ import javax.persistence.*;
  * Created by Gordon on 2014/4/15.
  * 后台管理员
  */
-@Entity
-@Table(name = "t_user")
+//@Entity
+//@Table(name = "t_user")
 public class User {
 
-    @Id
-    @GenericGenerator(name = "system-uuid", strategy = "uuid")
-    @GeneratedValue(generator = "system-uuid")
-    @Column(length = 32)
+//    @Id
+//    @GenericGenerator(name = "system-uuid", strategy = "uuid")
+//    @GeneratedValue(generator = "system-uuid")
+//    @Column(length = 32)
     private int id;
 
     //登录名
-    @Column(length = 32)
+//    @Column(length = 32)
     private String name;
 
     //登录密码
-    @Column(length = 32)
+//    @Column(length = 32)
     private String password;
 
     //该用户名地查看的菜单 权限
-    @Column(length = 32)
+//    @Column(length = 32)
     private String menus;
 
     //昵称
-    @Column(length = 32)
+//    @Column(length = 32)
     private String nickName;
 
     public int getId() {
