@@ -1,7 +1,6 @@
 package com.adserver.controller;
 
-import com.adserver.dao.IManagerDao;
-import com.adserver.service.IManagerServie;
+import com.adserver.service.IManagerService;
 import com.adserver.web.entity.Manager;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,8 +15,8 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 public class LoginController {
 
-    @Resource(name = "managerServie")
-    private IManagerServie managerServie;
+    @Resource(name = "managerService")
+    private IManagerService managerService;
 
     @RequestMapping("/login")
     public String showLoginPage(HttpServletRequest request, HttpServletResponse response) {

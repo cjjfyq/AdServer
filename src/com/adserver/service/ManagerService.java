@@ -9,8 +9,13 @@ import java.util.List;
  * Created by Gordon on 2014/4/15.
  *
  */
-public class ManagerService implements IManagerDao {
+public class ManagerService implements IManagerService {
 
+    private IManagerDao managerDao;
+
+    public void setManagerDao(IManagerDao managerDao) {
+        this.managerDao = managerDao;
+    }
 
     @Override
     public void addManager(Manager manager) {

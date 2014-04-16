@@ -16,6 +16,11 @@ public class ManagerDao implements IManagerDao {
         this.sessionFactory = sessionFactory;
     }
 
+
+    public SessionFactory getSessionFactory() {
+        return sessionFactory;
+    }
+
     @Override
     public void addManager(Manager manager) {
         

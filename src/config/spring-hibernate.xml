@@ -58,7 +58,7 @@
 
 
 	<!-- 事务代理类 -->
-	<bean id="transactionBese"
+	<bean id="transactionBase"
 		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean"
 		lazy-init="true" abstract="true">
 		<property name="transactionManager" ref="transactionManager"></property>

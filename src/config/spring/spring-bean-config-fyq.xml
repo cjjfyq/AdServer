@@ -23,12 +23,12 @@
         <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
 
-    <bean id="managerService" parent="transactionBese">
-        <property name="target" ref="managerServiceBese"></property>
+    <bean id="managerServiceBase" class="com.adserver.service.ManagerService">
+        <property name="managerDao" ref="managerDao"></property>
     </bean>
 
-    <bean id="managerServie" parent="transactonBese">
-        <property name="target" ref="managerServieBese"></property>
+    <bean id="managerService" parent="transactionBase">
+        <property name="target" ref="managerServiceBase"></property>
     </bean>
 
 </beans>

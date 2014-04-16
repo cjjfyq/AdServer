@@ -42,7 +42,7 @@
 
 </head>
 <body>
-<h1 style="color: green">登录页面</h1>
+<h1 style="color: green"></h1>
 
 <form id="form1" action="/adserver/doLogin" >
 用户名：<input type="text" id="name" name="name" ><br>
